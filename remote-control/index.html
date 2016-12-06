@@ -1,0 +1,43 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+  <style>
+    .vertical-center {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      height: 90%;
+      width: 90%;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="row">
+  <div class="col-xs-6 vertical-center" style="padding-left: 5%;">
+    <button class="btn btn-primary" data-msg="damagep1">Hit P1</button>
+  </div>
+  <div class="col-xs-6 vertical-center" style="padding-left: 5%;">
+    <button class="btn btn-primary" data-msg="damagep2">Hit P2</button>
+  </div>
+</div>
+
+<script>
+  const remoteControl = new WebSocket("ws://192.168.1.40:3334");
+
+  remoteControl.onopen = () => {
+    console.log("Connected to remote control server");
+
+    const arrayOf = (arrayish) => Array.prototype.slice.call(arrayish);
+    arrayOf(document.querySelectorAll('button')).forEach(button => button.addEventListener(
+        'click',
+        () => remoteControl.send(button.getAttribute('data-msg'))
+    ));
+  };
+
+</script>
+</body>
+</html>

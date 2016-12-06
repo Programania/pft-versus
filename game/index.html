@@ -225,5 +225,16 @@
 <audio id="myaudio">
   HTML5 audio not supported
 </audio>
+
+<script>
+  var remoteControl = new WebSocket("ws://localhost:3333");
+
+  remoteControl.onmessage = function (event) {
+    if (event.data === 'damagep1')
+      DamageP1();
+    if (event.data === 'damagep2')
+      DamageP2();
+  }
+</script>
 </body>
 </html>
