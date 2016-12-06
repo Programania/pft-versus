@@ -9,14 +9,14 @@
 
 ## Connect to the game
 
-Open a browser and access to whatever URL the ```npm run game``` command has announced
+Open a browser and access to whatever URL the ```npm run game``` command has announced.
 
 You can **start a new versus** clicking on the bottom left button.
 
-A match will start after some player loses. If you want to change characters, just click the bottom left button again.
+A new match will start after some player loses. If you want to change characters, just click the bottom left button again.
 
 ## Connect remote control clients
 
-Open a browser and access to whatever URL the ```npm run client``` command has announced
+Open a browser and access to whatever URL the ```npm run client``` command has announced.
 
 Replace ```localhost``` by the server's local IP address to access it remotely.
