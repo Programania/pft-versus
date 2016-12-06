@@ -1,0 +1,19 @@
+{
+  "name": "pft-versus",
+  "version": "1.0.0",
+  "description": "Street Fighter Alpha --------------------",
+  "main": "index.js",
+  "scripts": {
+    "game": "http-server -p8080 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggalmazor/js-sfa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ggalmazor/js-sfa/issues"
+  },
+  "homepage": "https://github.com/ggalmazor/js-sfa#readme"
+}
