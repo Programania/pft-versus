@@ -1,5 +1,7 @@
 # Programania From the Trenches - Versus game
 
+This little game is adapted from the [Street Fighter Alpha port to JavaScript found here](https://github.com/gamedev8/js-sfa) by [@gamedev8](https://github.com/gamedev8). All kudos for them.
+
 ## Set everything up
 
 1. Download dependencies with ```game/npm install``` **and** ```remote-control/npm install```
