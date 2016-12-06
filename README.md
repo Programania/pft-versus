@@ -2,6 +2,12 @@
 
 This little game is adapted from the [Street Fighter Alpha port to JavaScript found here](https://github.com/gamedev8/js-sfa) by [@gamedev8](https://github.com/gamedev8). All kudos for them.
 
+## Demo
+
+Take a look to this video in YouTube:
+
+[![Demo Programania From the Trenches - Versus game (YouTube)](https://img.youtube.com/vi/Aj5k-rMuDtU/0.jpg)](https://www.youtube.com/watch?v=Aj5k-rMuDtU)
+
 ## Set everything up
 
 1. Download dependencies with ```game/npm install``` **and** ```remote-control/npm install```
